@@ -9,7 +9,8 @@ const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
 const themeOptions = document.querySelectorAll(
   "[data-theme-option]"
 );
-let currentTheme = localStorage.getItem("theme") || localStorage.setItem("theme", "system");
+let currentTheme = localStorage.getItem("theme") || "system";
+localStorage.setItem("theme", currentTheme);
 
 
 updateTheme(currentTheme);

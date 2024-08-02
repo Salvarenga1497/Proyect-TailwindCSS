@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./tailwind.css" />
     <title>Tailwind CSS</title>
   </head>
-  <body class="bg-slate-100 flex-col flex h-screen dark:bg-slate-950">
+  <body class="bg-slate-100 flex-col flex h-screen dark:bg-slate-950 selection:bg-sky-600 selection:text-sky-50">
      <header class="bg-white shadow px-6 dark:bg-slate-900">
       <div class="max-w-6xl mx-auto flex justify-between h-16 items-center">
         <button
@@ -259,15 +259,16 @@
     </header>
     <main class="p-4 flex-1">
       <div class="mx-auto mt-4 max-w-6xl">
-        <div
-          class="dark:bg-slate-900 bg-white p-10 rounded-lg shadow-lg max-w-1xl mx-auto md:p-14"
-        >
-          <h1
-            class="text-3xl font-serif font-extrabold text-sky-600 text-center dark:text-sky-400"
+        <h1
+            class="md:text-5xl text-4xl mt-4 mb-8 font-serif font-extrabold text-sky-600 text-center"
           >
             Contact Us
           </h1>
-          <form class="mt-10 flex flex-col space-y-4">
+        <div
+          class="dark:bg-slate-900 bg-white p-10 rounded-lg shadow-lg max-w-1xl mx-auto md:p-14"
+        >
+          
+          <form class=" flex flex-col space-y-4">
             <input
               type="text"
               class="rounded-md border-slate-300 bg-slate-50 shadow-sm placeholder:text-slate-400 focus:border-sky-600 focus:ring-offset-sky-600 text-slate-600 dark:bg-slate-950 dark:text-slate-200 dark:border-slate-700"
